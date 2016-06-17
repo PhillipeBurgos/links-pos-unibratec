@@ -2,7 +2,7 @@
 
 Links e materiais disponibilizados na sala de aula
 
-![Design Web Apps com Tecnologia Front-End](http://jonathanlima.com.br/design-web-app.jpg)
+![Design Web Apps com Tecnologia Front-End](http://jonathanlima.com.br/outros/design-web-app.jpg)
 
 ## Disciplinas
 
