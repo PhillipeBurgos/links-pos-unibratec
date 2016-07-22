@@ -1,0 +1,331 @@
+/* === General ================================================================ */
+
+*{
+	font-family: "Roboto Slab"
+}
+
+#bio, 
+#disc,
+#shows{
+	font-family: "Tangerine";
+	font-size: 5em;
+	text-align: center;
+	color: #5badf0;
+	margin-bottom: 50px
+}
+
+/* === End General ============================================================ */
+
+/* === Header ================================================================ */
+
+.header{
+	background-image: url(../img/main-photo.jpg);
+	height: 500px;
+	background-attachment: fixed;
+}
+
+.logo{
+	font-family: "Tangerine";
+	color: #fff;
+	font-size: 500%;
+	max-width: 100%;
+}
+
+/* === End Header ============================================================ */
+
+/* === Menu ================================================================ */
+
+.menu{
+	width: 100%;
+}
+
+.menu ul li{
+	display: block;
+	text-transform: uppercase;	
+}
+
+.menu ul li a{
+	text-decoration: none;
+	text-shadow: 1px 1px 1px #000;
+	color: #fff;
+	padding: 15px 15px;
+	transition: .3s ease-out;
+	margin-bottom: 15px
+}
+
+.menu ul li a:hover{
+	margin-left: 10px
+}
+
+/* === End Menu ============================================================ */
+
+/* === Buy button ================================================================ */
+
+.buy-disc{
+	text-align: center;
+	width: 100%;
+	float: left;
+	margin-top: 50px;
+	background-color: rgba(0, 0, 0, 0.3);
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.button-buy{
+	color: #007b43;
+	border: 1px solid #007b43;
+	padding: 20px;
+	border-radius: 50px;
+	text-decoration: none;
+	text-transform: uppercase
+}
+
+.button-buy:hover{
+	background-color: #007b43;
+	border: 1px solid #007b43;
+	color: white;
+	text-decoration: none;
+	transition: 1s ease-out;
+}
+
+/* === end Buy button ============================================================ */
+
+/* === Bio ================================================================ */
+
+.bio{
+	background-color: #111;
+	color: #fff;
+	margin: -30px 0 30px 0;
+	box-shadow: 0 2px 5px #000;
+	padding: 30px 0;
+}
+
+.bio article p{
+	width: 60%;
+	margin: 50px auto;
+}
+
+/* === end Bio ============================================================ */
+
+/* === Disc ==================================================================== */
+
+.disc-info,
+.disc-img{
+	margin: 0;
+	text-align: center;
+	max-width: 120%;
+}
+
+.disc-info{
+	background-color: #f7f7f7;
+	margin: 20px 0;
+	padding: 10% 15%;
+}
+
+.disc-info header h2{
+	font-size: 2em;
+	margin-bottom: 50px;
+}
+
+.disc-info article p b{
+	color: #000;
+}
+
+.disc-button-buy{
+	color: #fff;
+	background-color: #2fbd7d;
+	border: 1px solid #2fbd7d;
+	padding: 10px 20px;
+	border-radius: 50px;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: 1s ease-out;
+	display: inline-block;
+}
+
+.disc-button-buy:hover{
+	color: #fff;
+	background-color: #007b43;
+	border: 1px solid #007b43;
+}
+
+.disc-info:nth-child(1){
+	margin-top: 0;
+}
+
+.disc-img img{
+	max-width: 100%
+}
+
+.first-disc,
+.second-disc,
+.third-disc{
+	margin-left: 2%;
+}
+
+.new-cd{
+	background-repeat: no-repeat;
+	border-top: 1px dotted #ccc;
+	border-bottom: 1px dotted #ccc;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+
+.new-cd-info{
+	background-color: #000;
+	padding-bottom: 5%;
+}
+
+.new-cd-info header h1{
+	margin: 10% 10% 0 10%;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+.new-cd-info header h2{
+	margin: 0 10% 10% 10%;
+	text-transform: uppercase;
+	color: orange;
+	font-size: 1.2em;
+}
+
+.new-cd-info article p{
+	margin: 0 0 3% 10%;
+	color: #fff;
+}
+
+.new-cd-info span{
+	display: block;
+	margin: 0 0 1% 10%;
+	color: #5badf0;
+}
+
+audio{
+	margin: 0 0 1% 10%;
+	display: inline-block;
+}
+
+.new-cd-buy {
+	margin-top: 50px;
+}
+
+.new-cd-buy a{
+	background-color: #2fbd7d;
+	color:#fff;
+	text-decoration: none;
+	padding: 20px;
+	text-transform: uppercase;
+	transition: .5s ease-out;
+	display: inline-block;
+	margin: 10px 0
+}
+
+.new-cd-buy a:hover{
+	background-color: #007b43;
+}
+
+.new-cd-img{
+	transform: rotate(5deg);
+	z-index: -9999;
+	position: relative;
+}
+
+.new-cd-img img{
+	width: 40%;
+	right: 0;
+	margin-top: 20px;
+	position: absolute;
+}
+
+/* === end Disc ================================================================ */
+
+/* === Show ==================================================================== */
+
+.calendar{
+	background-color: #000;
+	color: #fff;
+}
+
+.calendar #shows{
+	color: #fff;
+}
+
+.next{
+	color: #fff;
+	text-shadow: 1px 1px 1px #000;
+}
+
+.calendar-shows-list{
+	color: #333;
+	margin-bottom: 100px;
+	text-align: center
+}
+
+.calendar-shows-list ul{
+	list-style-type: none; 
+}
+
+.calendar-shows-contact{
+	text-align: center
+}
+
+.calendar-shows-contact a{
+	border: 1px solid #fff;
+	color: #fff;
+	text-transform: uppercase;
+	background-color: #5badf0;
+	text-decoration: none;
+	padding: 25px 30px;
+	border-radius: 50px;
+}
+
+.calendar-shows-contact a:hover{
+	text-decoration: underline;
+}
+
+/* === end Show ================================================================ */
+
+/* === mini album ================================================================ */
+
+.mini-album{
+	margin: 100px 0;
+	text-align: center
+}
+
+.mini-album ul li{
+	display: inline-block;
+	text-align: center
+}
+
+.mini-album ul li img{
+	width: 60%;
+	min-width: 255px;
+}
+/* === end mini ================================================================ */
+
+
+/* === Footer ================================================================ */
+
+.footer{
+	background-color: #5badf0;
+	padding: 5% 0;
+	color: #fff;
+}
+
+.footer ul li{
+	list-style-type: none;
+}
+
+.footer ul li a{
+	color: #fff;
+}
+
+.footer h5{
+	color: #333;
+	font-size: 2em
+}
+
+/* === end Footer ============================================================ */
+
