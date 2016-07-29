@@ -1,7 +1,7 @@
-# Calma, a aula nem começou...
+# Fundamentos de programação web com JavaScript
 
-Por isso não tem material. Mas você [pode ajudar](../contribua.md).
+Professor: Eric Cavalcanti
 
-![calma!](http://66.media.tumblr.com/ccb30f8c4fbbf32eaa6fbe9a23c2ad5a/tumblr_nym1s1bOB51v096cfo1_500.gif)
+- [Election.io - Build cross platform desktop apps with JavaScript, HTML, and CSS](http://electron.atom.io/)
 
 [<- Voltar](../README.md)
