@@ -14,38 +14,6 @@ html(lang="pt-BR")
 		//- ----------------------------------------------------------------------
 		link(href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet" type="text/css")
 
-		script.
-			function validar(){
-				var nome 						= form1.nome.value;			
-				var email 					= form1.email.value;			
-				var cpf 						= form1.cpf.value;
-				var dataNascimento 	= form1.datanascimento.value;
-
-				if (nome == '' || !isNaN(nome)) {
-					document.querySelector('.alerta-nome').style.display = 'block';
-					form1.nome.focus();
-					return false;
-				}
-
-				if (email == '' || email.indexOf('@') == -1 || email.indexOf('.') == -1){
-					document.querySelector('.alerta-email').style.display = 'block';
-					form1.email.focus();
-					return false;
-				}
-
-				if (cpf == ''){
-					document.querySelector('.alerta-cpf').style.display = 'block';
-					form1.cpf.focus();
-					return false;
-				}
-
-				if (dataNascimento == ''){
-					document.querySelector('.alerta-data').style.display = 'block';
-					form1.cpf.focus();
-					return false;
-				}
-			}
-
 	body
 		.container
 			form(name="form1" action="" method="post").contact-form
@@ -65,4 +33,6 @@ html(lang="pt-BR")
 				span.alerta-data Favor digitar o campo no formato 00/00/0000 
 				input(name="datanascimento" type="text" placeholder="ex: 00/00/0000" pattern="/(0[1-9]|1[0-2])/\d{2}")
 
-				input#formEnviar(onclick="return validar();" type="submit" value="Enviar o formulário")
+				input#formEnviar(type="submit" value="Enviar o formulário")
+
+		script(src="js/main.js")
