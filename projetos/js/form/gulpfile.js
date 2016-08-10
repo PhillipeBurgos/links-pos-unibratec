@@ -7,9 +7,7 @@ var gulp        = require('gulp'),                  // Task Runner.
     jade        = require('gulp-jade'),             // HTML Template Engine.
     sass        = require('gulp-sass'),             // CSS preprocessor.
     uglify      = require('gulp-uglify'),           // To minify JS files.
-    sourcemaps  = require('gulp-sourcemaps'),       // To generate CSS and JS sourcemaps.
-    imagemin    = require('gulp-imagemin');         // To image compress.
-
+    sourcemaps  = require('gulp-sourcemaps')        // To generate CSS and JS sourcemaps.
 
 // Constants with all directories and files path.
 // ----------------------------------------------------------------------
@@ -21,13 +19,14 @@ const src_path = {
   cssAll: 'src/css/**/*',
   js: 'src/js/**/*.js',
   images: 'src/images/*'
-}
+};
+
 const build_path = {
   index: 'build',
   css: 'build/css/',
   js: 'build/js/',
   images: 'build/images/'
-}
+};
 
 
 // HTML task.
@@ -60,12 +59,6 @@ gulp.task('css', function(){
       .pipe(browserSync.stream());
 });
 
-// Skeleton Grid System
-gulp.task('cssPure', function() {
-    gulp.src(src_path.cssPure)
-        .pipe(gulp.dest(build_path.css));
-});
-
 
 // JavaScript task.
 // Using gulp-uglify plugin.
@@ -78,20 +71,6 @@ gulp.task('js', function() {
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest(build_path.js))
         .pipe(browserSync.stream());
-});
-
-
-// Image compress task.
-// With gulp-imagemin plugin.
-// ---------------------------------------------------------------------
-gulp.task('images', function(){
-  gulp.src(src_path.images)
-      .pipe(plumber())
-      .pipe(imagemin({
-        progressive: true,
-        optimizationLevel: 4
-      }))
-      .pipe(gulp.dest(build_path.images));
 });
 
 
@@ -120,6 +99,6 @@ gulp.task('browser-sync', ['css'], function() {
 
 // Gulp tasks.
 // ---------------------------------------------------------------------
-gulp.task('build', ['html', 'css', 'cssPure', 'js', 'images']);
-gulp.task('no-bs', ['watch', 'html', 'css', 'cssPure', 'js', 'images']);
-gulp.task('default', ['watch', 'html', 'css', 'cssPure', 'js', 'images', 'browser-sync']);
+gulp.task('build', ['html', 'css', 'js']);
+gulp.task('no-bs', ['watch', 'html', 'css', 'js']);
+gulp.task('default', ['watch', 'html', 'css', 'js', 'browser-sync']);
