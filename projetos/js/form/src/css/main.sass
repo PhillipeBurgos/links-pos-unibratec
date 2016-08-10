@@ -1,0 +1,45 @@
+$roboto : "Roboto Slab";
+$green 	: #00c86f
+$white 	: #fff
+
+*
+	margin: 0
+	padding: 0
+	font-family: $roboto
+
+	background-color: #555
+	color: #fff
+
+.container
+	display: flex
+	justify-content: flex-start
+	height: 500px
+
+.contact-form
+	display: flex
+	flex-flow: column wrap
+	padding: 30px 50px
+	width: 300px
+	margin: auto
+	
+	label
+		margin: 20px 0 0 0 
+	
+	input
+		padding: 10px 5px
+		margin-top: 5px
+	
+	input[type="submit"]
+		margin-top: 50px
+		padding: 10px 0
+		background-color: $green
+		color: $white
+
+.alerta-nome,
+.alerta-email,
+.alerta-cpf,
+.alerta-data
+	color: red
+	font-size: 0.7em
+	margin-bottom: 15px
+	display: none
