@@ -9,6 +9,16 @@
 - Jade
 - Sass
 - Javascript
+- Gulp
+	- browser-sync
+	- gulp
+	- gulp-imagemin
+	- gulp-jade
+	- gulp-plumber
+	- gulp-sass
+	- gulp-sourcemaps
+	- gulp-uglify
+	- gulp-watch
 
 ### About the project
 
